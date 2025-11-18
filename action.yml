@@ -1,5 +1,5 @@
 name: 'Install Google Fonts'
-description: 'Install fonts from Google Fonts in GitHub Actions'
+description: 'Install fonts from Google Fonts in GitHub Workflows. Ideal for multi-language font support in Coding Agent.'
 author: jim60105
 branding:
   icon: type

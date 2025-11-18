@@ -1,6 +1,9 @@
 # action-install-google-fonts
 
-Install Google Fonts in GitHub Actions
+> [!IMPORTANT]  
+> This action requires an **Ubuntu runner**. It will not work on Windows or macOS runners.
+
+Install fonts from [Google Fonts](https://fonts.google.com/) in GitHub Workflows. Ideal for multi-language font support in Coding Agent.
 
 ## Features
 
@@ -8,10 +11,6 @@ Install Google Fonts in GitHub Actions
 - 🎯 **Flexible Font Weights**: Specify required weights (100-900)
 - ⚡ **Fast Installation**: Quick download using wget
 - 🔒 **Security Verification**: SHA256 checksum provided
-
-## Requirements
-
-- Ubuntu runner
 
 ## Usage
 
