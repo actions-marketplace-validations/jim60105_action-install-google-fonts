@@ -19,7 +19,11 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: ${{ github.action_path }}/init.sh
+    - run: |
+        if [ ! -d "$HOME/.fonts" ]; then
+          mkdir -p "$HOME/.fonts"
+          echo "create ~/.fonts/"
+        fi
       shell: bash
     
     - run: |
@@ -33,9 +37,13 @@ runs:
     
     - run: |
         echo "::group::Update font cache"
-        ${{ github.action_path }}/install.sh
+        sudo fc-cache -fv
         echo "::endgroup::"
       shell: bash
     
-    - run: ${{ github.action_path }}/clear.sh
+    - run: |
+        echo "::group::Cleanup"
+        rm -rf fonts_temp/ 2>/dev/null || true
+        rm -f *.css 2>/dev/null || true
+        echo "::endgroup::"
       shell: bash
