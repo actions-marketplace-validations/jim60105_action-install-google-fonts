@@ -11,18 +11,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [2.0.0] - 2025-11-18
+
 ### Added
 
 - Install any Google Fonts families by listing them in the `fonts` input, supporting comma-separated or multi-line values.
 - Customize downloadable font weights with the `weights` input while keeping `400,700` as a sensible default.
+- Automate GitHub releases from version tags using changelog content.
 
 ### Changed
 
 - Switch the action implementation from CNS11643 archives to Google Fonts CSS endpoints so any language set can be installed.
 - Inline the install script inside `action.yml` for simpler maintenance on composite runners.
+- Translate all documentation to English for broader accessibility.
 
 ### Removed
 
+- **BREAKING**: Removed `kai` and `sung` boolean inputs in favor of the flexible `fonts` string input.
 - Dropped the `download-flag` action input in favor of the standard quiet `wget` flags used by the installer script.
 
 ## [1.1.1] - 2025-04-03
@@ -43,7 +48,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Initial release of the CNS11643 fonts installer for GitHub Actions.
 
-[Unreleased]: https://github.com/jim60105/action-install-google-fonts/compare/v1.1.1...HEAD
+[Unreleased]: https://github.com/jim60105/action-install-google-fonts/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/jim60105/action-install-google-fonts/compare/v1.1.1...v2.0.0
 [1.1.1]: https://github.com/jim60105/action-install-google-fonts/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/jim60105/action-install-google-fonts/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/jim60105/action-install-google-fonts/releases/tag/v1.0.0
