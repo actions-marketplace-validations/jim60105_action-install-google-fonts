@@ -68,7 +68,6 @@ steps:
         Noto Sans TC
         Noto Serif TC
       weights: '400,700'
-      download-flag: '-v'  # verbose output
 ```
 
 ### Parameters
@@ -77,7 +76,6 @@ steps:
 |-----------|----------|---------|-------------|
 | `fonts` | ✅ Yes | - | List of fonts to install (comma or newline separated) |
 | `weights` | ❌ No | `'400,700'` | Font weights to install (100-900) |
-| `download-flag` | ❌ No | `'-nv'` | wget download flags |
 
 ### Advanced Configuration Recommendations
 
