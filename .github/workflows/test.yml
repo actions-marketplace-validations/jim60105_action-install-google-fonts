@@ -19,10 +19,7 @@ on:
       fonts:
         description: 'Fonts to install (comma-separated or one per line)'
         required: false
-        default: |
-          Roboto
-          Noto Sans TC
-          Noto Color Emoji
+        default: Roboto, Noto Sans TC, Noto Color Emoji
       weights:
         description: 'Weights to install (comma-separated)'
         required: false
