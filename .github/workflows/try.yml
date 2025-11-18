@@ -23,6 +23,8 @@ jobs:
   test-comma-separated:
     name: Test with comma-separated fonts
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v5
       
@@ -48,6 +50,8 @@ jobs:
   test-multiline:
     name: Test with multiline fonts
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v5
       
@@ -69,6 +73,8 @@ jobs:
   test-custom-input:
     name: Test with user input
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v5
       
@@ -87,6 +93,8 @@ jobs:
   test-emoji:
     name: Test Noto Color Emoji
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v5
       
@@ -105,6 +113,8 @@ jobs:
   test-single-font:
     name: Test single font installation
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v5
       
@@ -123,6 +133,8 @@ jobs:
   test-multiple-weights:
     name: Test multiple weights
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v5
       
